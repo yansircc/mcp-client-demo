@@ -18,7 +18,7 @@ export function SimpleMcpClient() {
 		setResponse("");
 
 		try {
-			const res = await fetch("http://localhost:3001/api/mcp-test", {
+			const res = await fetch(`${window.location.origin}/api/mcp-test`, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
